@@ -4,8 +4,20 @@ mtcars data set and produce column wise summary statistics
 using apply function and mtcars dataset.
 B. write a program to extract the names of the list.
 
-Answer:
+A. Answer:
 > View(mtcars)
+tapply(mtcars$mpg,mtcars$disp,median)
+ 71.1  75.7  78.7    79  95.1   108 120.1 120.3   121 140.8   145 146.7   160 167.6   225   258 
+ 33.9  30.4  32.4  27.3  30.4  22.8  21.5  26.0  21.4  22.8  19.7  24.4  21.0  18.5  18.1  21.4 
+275.8   301   304   318   350   351   360   400   440   460   472 
+ 16.4  15.0  15.2  15.5  13.3  15.8  16.5  19.2  14.7  10.4  10.4 
+> tapply(mtcars$mpg,mtcars$disp,mean)
+ 71.1  75.7  78.7    79  95.1   108 120.1 120.3   121 140.8   145 146.7   160 167.6   225   258 
+ 33.9  30.4  32.4  27.3  30.4  22.8  21.5  26.0  21.4  22.8  19.7  24.4  21.0  18.5  18.1  21.4 
+275.8   301   304   318   350   351   360   400   440   460   472 
+ 16.3  15.0  15.2  15.5  13.3  15.8  16.5  19.2  14.7  10.4  10.4 
+
+B. Answer:
 > n=list(mtcars$mpg,mtcars$cyl,mtcars$disp,mtcars$hp)
 > n
 [[1]]
